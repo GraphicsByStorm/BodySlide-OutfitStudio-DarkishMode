@@ -1,6 +1,9 @@
 # BodySlide-OutfitStudio-DarkishMode
  I went through the .xrc files and converted as much as is possible to a dark theme.
 
+ NOTE: This is JUST the .xrc files, nothing else from BodySlide or OutfitStudio exist here, so download the tools from here!
+![link](https://github.com/ousnius/BodySlide-and-Outfit-Studio)
+
 ![image](https://i.imgur.com/WtY3LoL.png)
 
 
@@ -13,3 +16,11 @@
 
 * That's it! After ensuring all 19 .xrc files are in the xrc folder start up BodySlide or OutfitStudio!
 * Enjoy your Darkish Mode, your eyes will thank you!
+
+# Massive Thanks to Ousnius and the others listed below who helped or created the original tools
+
+* Caliente
+* ousnius
+* jonwd7 for NIF and general help
+* degenerated1123 for help with shaders
+* NifTools team
