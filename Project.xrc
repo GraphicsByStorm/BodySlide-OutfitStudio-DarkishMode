@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+	<object class="wxWizard" name="wizNewProject">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<title>New Project</title>
+		<pos>0,0</pos>
+		<centered>1</centered>
+		<object class="wxWizardPageSimple" name="wizpgNewProj1">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<object class="wxBoxSizer">
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<orient>wxVERTICAL</orient>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxALL|wxEXPAND</flag>
+					<border>5</border>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="wxStaticText" name="lbNewProj1">
+						<label>Welcome to the New Project wizard!\n\nFirst, please choose a reference. Typically, this is a body (such as CBBE) or a conversion set (such as Vanilla To CBBE) and comes with its sliders.</label>
+						<wrap>380</wrap>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+					</object>
+				</object>
+				<object class="spacer">
+					<option>0</option>
+					<flag>wxEXPAND</flag>
+					<border>5</border>
+					<size>0,10</size>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxEXPAND</flag>
+					<border>5</border>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="wxStaticBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<label>Reference</label>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="wxFlexGridSizer">
+								<rows>0</rows>
+								<cols>2</cols>
+								<vgap>0</vgap>
+								<hgap>0</hgap>
+								<growablecols>1</growablecols>
+								<growablerows></growablerows>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxRadioButton" name="npRefIsTemplate">
+										<style>wxRB_GROUP</style>
+										<label>From Template</label>
+										<value translate="0">1</value>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxChoice" name="npTemplateChoice">
+										<style>wxCB_SORT</style>
+										<selection>0</selection>
+										<content />
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxRadioButton" name="npRefIsSliderset">
+										<label>From File</label>
+										<value translate="0">0</value>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxFilePickerCtrl" name="npSliderSetFile">
+										<value></value>
+										<message>Select a project or NIF file</message>
+										<wildcard>*.osp;*.xml;*.nif</wildcard>
+										<style>wxFLP_DEFAULT_STYLE</style>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</object>
+								</object>
+								<object class="spacer">
+									<option>1</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<size>0,0</size>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxFlexGridSizer">
+										<rows>0</rows>
+										<cols>2</cols>
+										<vgap>0</vgap>
+										<hgap>0</hgap>
+										<growablecols>1</growablecols>
+										<growablerows></growablerows>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="lbSliderSetName">
+												<label>Slider Set:</label>
+												<wrap>-1</wrap>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>1</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxChoice" name="npSliderSetName">
+												<selection>0</selection>
+												<content />
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="lbRefShapeName">
+												<label>Shape:</label>
+												<wrap>-1</wrap>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>1</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxChoice" name="npRefShapeName">
+												<selection>0</selection>
+												<content />
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="wxRadioButton" name="npRefIsBlank">
+								<label>Clear Reference</label>
+								<value translate="0">0</value>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object class="wxWizardPageSimple" name="wizpgNewProj2">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<object class="wxBoxSizer">
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<orient>wxVERTICAL</orient>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxALL|wxEXPAND</flag>
+					<border>5</border>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="wxStaticText" name="lbNewProj2">
+						<label>Next, select an outfit/mesh to work on and enter a display name for it.</label>
+						<wrap>380</wrap>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+					</object>
+				</object>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxEXPAND</flag>
+					<border>5</border>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="wxBoxSizer">
+						<orient>wxHORIZONTAL</orient>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+							<border>5</border>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="wxStaticText" name="lbOutfitName">
+								<label>Display Name</label>
+								<wrap>-1</wrap>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="wxTextCtrl" name="npOutfitName">
+								<value translate="0">New Outfit</value>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxEXPAND</flag>
+					<border>5</border>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="wxStaticBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<label>Outfit/Mesh</label>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxRadioButton" name="npWorkFile">
+										<style>wxRB_GROUP</style>
+										<label>From File</label>
+										<value translate="0">0</value>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxFilePickerCtrl" name="npWorkFilename">
+										<value></value>
+										<message>Select a file to load as an outfit/mesh</message>
+										<wildcard>*.nif; *.obj; *.fbx</wildcard>
+										<style>wxFLP_DEFAULT_STYLE</style>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="wxRadioButton" name="npWorkNone">
+								<label>Clear Outfit</label>
+								<value translate="0">1</value>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object class="spacer">
+					<option>0</option>
+					<flag>wxEXPAND</flag>
+					<border>5</border>
+					<size>0,10</size>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxEXPAND</flag>
+					<border>5</border>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="wxStaticBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<label>Textures</label>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="wxRadioButton" name="npTexAuto">
+								<style>wxRB_GROUP</style>
+								<label>Automatically search for textures</label>
+								<value translate="0">1</value>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxRadioButton" name="npTexFile">
+										<label>From File</label>
+										<value translate="0">0</value>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxFilePickerCtrl" name="npTexFilename">
+										<value></value>
+										<message>Select a texture file</message>
+										<wildcard>*.png; *.dds; *.jpg</wildcard>
+										<style>wxFLP_DEFAULT_STYLE</style>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="dlgSaveProject">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+		<size>486,345</size>
+		<title>Save Project As...</title>
+		<centered>1</centered>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxVERTICAL</orient>
+					<label translate="0">BodySlide</label>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="m_sssName">
+									<label>Display Name</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>2</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="sssName">
+									<tooltip>The name of the outfit and slider set, as it will appear in BodySlide.</tooltip>							
+									<value></value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="sssNameCopy">
+									<tooltip>Copies the current display name to the project text fields below.</tooltip>						
+									<label>To Project</label>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="m_staticText9111">
+									<label>Output File Name</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>2</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="sssOutputFileName">
+									<tooltip>The name of the outfit file that will end up in the game data path when BodySlide builds it. Should not include __1 or __0 in the name, e.g: lovelydress</tooltip>
+									<value></value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="m_lowHighInfo">					
+									<label translate="0">__0/__1.nif</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="m_OutputDataPath">
+									<label>Output Data Path</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>3</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="sssOutputDataPath">
+									<tooltip>The location in the game's data path where BodySlide-built outfit files will be placed, e.g: meshes\clothes\lovelydress</tooltip>
+									<value></value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxRadioButton" name="sssGenWeightsTrue">
+							<style>wxRB_GROUP</style>
+							<tooltip>If this is enabled, BodySlide creates a low and high weight model when it generates the final outfit.</tooltip>
+							<label>Low/High Weight Output</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxRadioButton" name="sssGenWeightsFalse">
+							<tooltip>If this is enabled, only one output file will be created (useful for single-weighted things like hair).</tooltip>
+							<label>Single Weight Output</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Project</label>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="m_sssSliderSetFile">
+									<label>Slider Set File</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>3</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxFilePickerCtrl" name="sssSliderSetFile">
+									<value></value>
+									<tooltip>The .osp slider set project file</tooltip>
+									<message>Select slider set .osp file name</message>
+									<wildcard>*.osp</wildcard>
+									<style>wxFLP_SAVE|wxFLP_USE_TEXTCTRL</style>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="m_sssShapeDataFolder">
+									<label>Shape Data Folder</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>3</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxDirPickerCtrl" name="sssShapeDataFolder">
+									<value></value>
+									<tooltip>The folder where all the slider data will go, as well as the base outfit NIF file.</tooltip>
+									<message>Select slider data folder</message>
+									<style>wxDIRP_DIR_MUST_EXIST|wxDIRP_USE_TEXTCTRL</style>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="m_sssShapeDataFile">
+									<label>Shape Data File</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>3</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxFilePickerCtrl" name="sssShapeDataFile">
+									<value></value>
+									<tooltip>The name of the output's base NIF file.</tooltip>
+									<message>Select output NIF file name</message>
+									<wildcard>*.nif</wildcard>
+									<style>wxFLP_SAVE|wxFLP_USE_TEXTCTRL</style>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckBox" name="sssAutoCopyRef">
+							<tooltip>Outfits require the reference body to be a part of the output file. Disable this if you've already copied the reference over or you don't want it included.</tooltip>
+							<label>Copy reference shape into output</label>
+							<checked>1</checked>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="spacer">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;Save</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="dlgLoadRef">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+		<title>Load Reference</title>
+		<centered>1</centered>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxLEFT|wxRIGHT|wxTOP|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="lbLoadRef">
+					<label>Please choose a reference. Typically, this is a body (such as CBBE) or a conversion set (such as Vanilla To CBBE) and comes with its sliders.</label>
+					<wrap>380</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Reference</label>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxFlexGridSizer">
+							<rows>0</rows>
+							<cols>2</cols>
+							<vgap>0</vgap>
+							<hgap>0</hgap>
+							<growablecols>1</growablecols>
+							<growablerows></growablerows>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxRadioButton" name="npRefIsTemplate">
+									<style>wxRB_GROUP</style>
+									<label>From Template</label>
+									<value translate="0">1</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxChoice" name="npTemplateChoice">
+									<style>wxCB_SORT</style>
+									<selection>0</selection>
+									<content />
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxRadioButton" name="npRefIsSliderset">
+									<label>From File</label>
+									<value translate="0">0</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxFilePickerCtrl" name="npSliderSetFile">
+									<value></value>
+									<message>Select a project or NIF file</message>
+									<wildcard>*.osp;*.xml;*.nif</wildcard>
+									<style>wxFLP_DEFAULT_STYLE</style>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="spacer">
+								<option>1</option>
+								<flag>wxEXPAND</flag>
+								<border>5</border>
+								<size>0,0</size>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxFlexGridSizer">
+									<rows>0</rows>
+									<cols>2</cols>
+									<vgap>0</vgap>
+									<hgap>0</hgap>
+									<growablecols>1</growablecols>
+									<growablerows></growablerows>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+										<border>5</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxStaticText" name="lbSliderSetName">
+											<label>Slider Set:</label>
+											<wrap>-1</wrap>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>1</option>
+										<flag>wxALL|wxEXPAND</flag>
+										<border>5</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxChoice" name="npSliderSetName">
+											<selection>0</selection>
+											<content />
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+										<border>5</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxStaticText" name="lbRefShapeName">
+											<label>Shape:</label>
+											<wrap>-1</wrap>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>1</option>
+										<flag>wxALL|wxEXPAND</flag>
+										<border>5</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxChoice" name="npRefShapeName">
+											<selection>0</selection>
+											<content />
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxRadioButton" name="npRefIsBlank">
+							<label>Clear Reference</label>
+							<value translate="0">0</value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Merge</label>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxFlexGridSizer">
+							<rows>0</rows>
+							<cols>2</cols>
+							<vgap>0</vgap>
+							<hgap>0</hgap>
+							<growablecols>1</growablecols>
+							<growablerows></growablerows>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxCheckBox" name="chkMergeZaps">
+									<label>Zaps</label>
+									<tooltip>Merge existing zaps with new sliders</tooltip>
+									<checked>1</checked>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxCheckBox" name="chkMergeSliders">
+									<label>Sliders</label>
+									<tooltip>Merge new sliders with existing sliders</tooltip>
+									<checked>0</checked>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="spacer">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="dlgLoadOutfit">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+		<title>Load Outfit</title>
+		<centered>1</centered>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxLEFT|wxRIGHT|wxTOP|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="lbLoadOutfit">
+					<label>Please select an outfit/mesh to work on and enter a display name for it.</label>
+					<wrap>380</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbOutfitName">
+							<label>Display Name</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxLEFT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxTextCtrl" name="npOutfitName">
+							<value translate="0">New Outfit</value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Outfit/Mesh</label>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxRadioButton" name="npWorkFile">
+									<style>wxRB_GROUP</style>
+									<label>From File</label>
+									<value translate="0">0</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxFilePickerCtrl" name="npWorkFilename">
+									<value></value>
+									<message>Select a file to load as an outfit/mesh</message>
+									<wildcard>*.nif; *.obj; *.fbx</wildcard>
+									<style>wxFLP_DEFAULT_STYLE</style>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxRadioButton" name="npWorkNone">
+							<label>Clear Outfit</label>
+							<value translate="0">1</value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckBox" name="npWorkAdd">
+							<label>Keep other shapes</label>
+							<checked>0</checked>
+							<enabled>0</enabled>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="spacer">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<size>0,10</size>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Textures</label>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxRadioButton" name="npTexAuto">
+							<style>wxRB_GROUP</style>
+							<label>Automatically search for textures</label>
+							<value translate="0">1</value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxRadioButton" name="npTexFile">
+									<label>From File</label>
+									<value translate="0">0</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxFilePickerCtrl" name="npTexFilename">
+									<value></value>
+									<message>Select a texture file</message>
+									<wildcard>*.png; *.dds; *.jpg</wildcard>
+									<style>wxFLP_DEFAULT_STYLE</style>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="spacer">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="dlgPackProjects">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+		<size>550,300</size>
+		<title>Pack Projects...</title>
+		<centered>1</centered>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="unknown" name="projectFilter">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxCheckListBox" name="projectList">
+					<style>wxLB_EXTENDED|wxLB_HSCROLL|wxLB_NEEDED_SB</style>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxFlexGridSizer">
+					<rows>0</rows>
+					<cols>3</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<growablecols>1</growablecols>
+					<growablerows></growablerows>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbGroupFile">
+							<label>Group file (optional):</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxFilePickerCtrl" name="groupFile">
+							<value></value>
+							<tooltip>Group file to pack (optional).</tooltip>
+							<message>Select a group XML file</message>
+							<wildcard>*.xml</wildcard>
+							<style>wxFLP_DEFAULT_STYLE</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="spacer">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<size>0,0</size>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbMergedFileName">
+							<label>Merged file name:</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxTextCtrl" name="mergedFileName">
+							<tooltip>File name to use for the merged project file.</tooltip>	
+							<value></value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxTOP|wxBOTTOM|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbOsp">
+							<label translate="0">.osp</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="packFolder">
+							<label>Pack Folder...</label>
+							<enabled>0</enabled>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="packArchive">
+							<label>Pack Archive...</label>
+							<enabled>0</enabled>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="groupManager">
+							<label>Group Manager</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxMenu" name="projectListContext">
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<object class="wxMenuItem" name="projectListNone">
+			<label>Select None</label>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+		</object>
+		<object class="wxMenuItem" name="projectListAll">
+			<label>Select All</label>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+		</object>
+		<object class="wxMenuItem" name="projectListInvert">
+			<label>Invert Selection</label>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+		</object>
+	</object>
+</resource>

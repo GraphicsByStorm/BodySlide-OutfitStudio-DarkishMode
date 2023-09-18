@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+	<object class="wxDialog" name="dlgSetup">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<title>Setup</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="lbDescription">
+					<style>wxALIGN_CENTRE</style>
+					<label>Please select the data folder and your target game.\nYou can only choose one game at a time, but it is possible to change the selection in the settings.</label>
+					<wrap>-1</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxFlexGridSizer">
+					<rows>0</rows>
+					<cols>3</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<growablecols>1</growablecols>
+					<growablerows></growablerows>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbOblivion">
+							<label translate="0">Oblivion</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxDirPickerCtrl" name="dirOblivion">
+							<value>Game not found! Select the data folder manually...</value>
+							<message>Select a folder</message>
+							<style>wxDIRP_DEFAULT_STYLE|wxDIRP_SMALL</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btOblivion">
+							<enabled>0</enabled>
+							<label>Choose Game</label>
+							<default>0</default>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbFallout3">
+							<label translate="0">Fallout 3</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxDirPickerCtrl" name="dirFallout3">
+							<value>Game not found! Select the data folder manually...</value>
+							<message>Select a folder</message>
+							<style>wxDIRP_DEFAULT_STYLE|wxDIRP_SMALL</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btFallout3">
+							<enabled>0</enabled>
+							<label>Choose Game</label>
+							<default>0</default>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbFalloutNV">
+							<label translate="0">Fallout New Vegas</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxDirPickerCtrl" name="dirFalloutNV">
+							<value>Game not found! Select the data folder manually...</value>
+							<message>Select a folder</message>
+							<style>wxDIRP_DEFAULT_STYLE|wxDIRP_SMALL</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btFalloutNV">
+							<enabled>0</enabled>
+							<label>Choose Game</label>
+							<default>0</default>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbSkyrim">
+							<label translate="0">Skyrim</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxDirPickerCtrl" name="dirSkyrim">
+							<value>Game not found! Select the data folder manually...</value>
+							<message>Select a folder</message>
+							<style>wxDIRP_DEFAULT_STYLE|wxDIRP_SMALL</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btSkyrim">
+							<enabled>0</enabled>
+							<label>Choose Game</label>
+							<default>0</default>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbFallout4">
+							<label translate="0">Fallout 4</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxDirPickerCtrl" name="dirFallout4">
+							<value>Game not found! Select the data folder manually...</value>
+							<message>Select a folder</message>
+							<style>wxDIRP_DEFAULT_STYLE|wxDIRP_SMALL</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btFallout4">
+							<enabled>0</enabled>
+							<label>Choose Game</label>
+							<default>0</default>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbSkyrimSE">
+							<label translate="0">Skyrim Special Edition</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxDirPickerCtrl" name="dirSkyrimSE">
+							<value>Game not found! Select the data folder manually...</value>
+							<message>Select a folder</message>
+							<style>wxDIRP_DEFAULT_STYLE|wxDIRP_SMALL</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btSkyrimSE">
+							<enabled>0</enabled>
+							<label>Choose Game</label>
+							<default>0</default>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbFallout4VR">
+							<label translate="0">Fallout 4 VR</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxDirPickerCtrl" name="dirFallout4VR">
+							<value>Game not found! Select the data folder manually...</value>
+							<message>Select a folder</message>
+							<style>wxDIRP_DEFAULT_STYLE|wxDIRP_SMALL</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btFallout4VR">
+							<enabled>0</enabled>
+							<label>Choose Game</label>
+							<default>0</default>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lbSkyrimVR">
+							<label translate="0">Skyrim VR</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxDirPickerCtrl" name="dirSkyrimVR">
+							<value>Game not found! Select the data folder manually...</value>
+							<message>Select a folder</message>
+							<style>wxDIRP_DEFAULT_STYLE|wxDIRP_SMALL</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btSkyrimVR">
+							<enabled>0</enabled>
+							<label>Choose Game</label>
+							<default>0</default>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>

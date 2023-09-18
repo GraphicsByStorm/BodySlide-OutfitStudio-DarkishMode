@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+ 	<object class="wxDialog" name="dlgSettings">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<title>Settings</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Game</label>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND|wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="lbTargetGame">
+									<size>100,-1</size>
+									<label>Target Game</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>3</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxChoice" name="choiceTargetGame">
+									<tooltip>Choose the target game you want to use the program for here.</tooltip>
+									<selection>0</selection>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<content>
+										<item translate="0">Fallout 3</item>
+										<item translate="0">Fallout New Vegas</item>
+										<item translate="0">Skyrim</item>
+										<item translate="0">Fallout 4</item>
+										<item translate="0">Skyrim Special Edition</item>
+										<item translate="0">Fallout 4 VR</item>
+										<item translate="0">Skyrim VR</item>
+										<item translate="0">Fallout 76</item>
+										<item translate="0">Oblivion</item>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</content>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND|wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="lbGameDataPath">
+									<size>100,-1</size>
+									<label>Game Data Path</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>3</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxDirPickerCtrl" name="dpGameDataPath">
+									<value translate="0">,90,90,-1,70,0</value>
+									<message>Select the data path of the game...</message>
+									<style>wxDIRP_DEFAULT_STYLE</style>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<tooltip>Data path to load textures from.</tooltip>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND|wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCollapsiblePane" name="advancedPane">
+							<style>wxCP_DEFAULT_STYLE|wxCP_NO_TLW_RESIZE</style>
+							<collapsed>1</collapsed>
+							<label>Advanced</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="panewindow">
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxBoxSizer">
+									<orient>wxVERTICAL</orient>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxEXPAND</flag>
+										<border>0</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxBoxSizer">
+											<orient>wxHORIZONTAL</orient>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="sizeritem">
+												<option>0</option>
+												<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+												<border>5</border>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+												<object class="wxStaticText" name="lbOutputPath">
+													<size>100,-1</size>
+													<label>Output Path</label>
+													<wrap>-1</wrap>
+													<bg>#1C1C1C</bg>
+													<fg>#4D4D4D</fg>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<option>3</option>
+												<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+												<border>5</border>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+												<object class="wxDirPickerCtrl" name="dpOutputPath">
+													<value></value>
+													<message>Select the output path...</message>
+													<style>wxDIRP_DEFAULT_STYLE</style>
+													<bg>#1C1C1C</bg>
+													<fg>#4D4D4D</fg>
+													<tooltip>Data path to build files to. If empty, Game Data Path will be used instead.</tooltip>
+												</object>
+											</object>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxEXPAND</flag>
+										<border>0</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxBoxSizer">
+											<orient>wxHORIZONTAL</orient>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="sizeritem">
+												<option>0</option>
+												<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+												<border>5</border>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+												<object class="wxStaticText" name="lbProjectPath">
+													<size>100,-1</size>
+													<label>Project Path</label>
+													<wrap>-1</wrap>
+													<bg>#1C1C1C</bg>
+													<fg>#4D4D4D</fg>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<option>3</option>
+												<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+												<border>5</border>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+												<object class="wxDirPickerCtrl" name="dpProjectPath">
+													<value></value>
+													<message>Select the project path...</message>
+													<style>wxDIRP_DEFAULT_STYLE</style>
+													<bg>#1C1C1C</bg>
+													<fg>#4D4D4D</fg>
+													<tooltip>Project path where files related to BodySlide are loaded from. If empty, executable directory will be used instead.</tooltip>
+												</object>
+											</object>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxEXPAND</flag>
+										<border>0</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxBoxSizer">
+											<orient>wxHORIZONTAL</orient>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="sizeritem">
+												<option>1</option>
+												<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+												<border>5</border>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+												<object class="wxCheckBox" name="cbShowForceBodyNormals">
+													<tooltip>With this turned on, BodySlide receives a new checkbox "Force Body Normals". Using it when building adds normal and tangent data to the body meshes (including bodies within outfits) for Skyrim. Use this only if you have a tangent space body mod.</tooltip>
+													<label>Show &apos;Force Body Normals&apos;</label>
+													<bg>#1C1C1C</bg>
+													<fg>#4D4D4D</fg>
+													<checked>0</checked>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>General</label>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND|wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxCheckBox" name="cbBBOverrideWarn">
+									<tooltip>Enables/disables the dialog for choosing which set to build during a batch build if overrides happen.</tooltip>
+									<label>Override Warning</label>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<checked>1</checked>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>2</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxCheckBox" name="cbBSATextures">
+									<tooltip>Enables/disables scanning BSAs in the game data folder for textures to load.</tooltip>
+									<label>BSA Textures</label>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<checked>1</checked>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND|wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxCheckBox" name="cbLeftMousePan">
+									<tooltip>Enables/disables panning the camera with the left mouse button in Outfit Studio.</tooltip>
+									<label>Left Mouse Pan</label>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<checked>0</checked>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxCheckBox" name="cbBrushSettingsNearCursor">
+									<tooltip>Enables/disables opening the brush settings near the mouse cursor when hitting the 'space' key.</tooltip>
+									<label>Brush Settings Near Cursor</label>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<checked>1</checked>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxCheckBox" name="cbMaskHistory">
+									<tooltip>Enables/disables the undo history for the mask brush and vertex selection.</tooltip>
+									<label>Mask History</label>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<checked>1</checked>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND|wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="lbLanguage">
+									<size>100,-1</size>
+									<label>Language</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>2</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxChoice" name="choiceLanguage">
+									<tooltip>Use the selected language for the program.</tooltip>
+									<selection>0</selection>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<content></content>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Rendering</label>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckBox" name="cbPerspectiveView">
+							<tooltip>Enables/disables the perspective view in the rendering window.</tooltip>
+							<label>Perspective View</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<checked>1</checked>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND|wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="lbColorBackground">
+									<size>100,-1</size>
+									<label>Background Color</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>2</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxColourPickerCtrl" name="cpColorBackground">
+									<tooltip>Background color of the renderer.</tooltip>
+									<value translate="0">rgb(210,210,210)</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND|wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="lbColorWire">
+									<size>100,-1</size>
+									<label>Wireframe Color</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>2</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxColourPickerCtrl" name="cpColorWire">
+									<tooltip>Wireframe color of the renderer.</tooltip>
+									<value translate="0">rgb(80,80,80)</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<minsize>400,125</minsize>
+					<orient>wxVERTICAL</orient>
+					<label>Data Files</label>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckListBox" name="DataFileList">
+							<style>wxLB_HSCROLL|wxLB_NEEDED_SB|wxLB_EXTENDED</style>
+							<content />
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Reference Skeleton</label>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND|wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="lbSkeletonFile">
+									<size>100,-1</size>
+									<label>File</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>3</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxFilePickerCtrl" name="fpSkeletonFile">
+									<value translate="0">,90,90,-1,70,0</value>
+									<message>Select a reference skeleton .nif file...</message>
+									<wildcard>*.nif</wildcard>
+									<style>wxFLP_DEFAULT_STYLE</style>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<tooltip>The reference skeleton file for Outfit Studio.</tooltip>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND|wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="lbSkeletonRoot">
+									<size>100,-1</size>
+									<label>Root Node</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>3</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxChoice" name="choiceSkeletonRoot">
+									<tooltip>The root node name of the reference skeleton. Can differ from game to game.</tooltip>
+									<selection>0</selection>
+									<content>
+										<item translate="0">Root</item>
+										<item translate="0">NPC Root [Root]</item>
+										<item translate="0">Bip01</item>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</content>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="spacer">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<size>0,20</size>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>

@@ -1,0 +1,2334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+	<object class="wxDialog" name="dlgMoveVertex">
+		<style>wxCAPTION|wxDEFAULT_DIALOG_STYLE</style>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<size>423,155</size>
+		<title>Apply a vertex position</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="m_staticText32">
+					<label>This permanently moves a single vertex straight to the given location.</label>
+					<wrap>400</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="spacer">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<size>0,0</size>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+					</object>
+					<object class="sizeritem">
+					<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="m_staticText3">
+							<label translate="0">X</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxTextCtrl" name="posX">
+							<value translate="0">0.0</value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="m_staticText4">
+							<label translate="0">Y</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxTextCtrl" name="posY">
+							<value translate="0">0.0</value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="m_staticText5">
+							<label translate="0">Z</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxTextCtrl" name="posZ">
+							<value translate="0">0.0</value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="dlgMoveShape">
+		<style>wxCAPTION|wxDEFAULT_DIALOG_STYLE</style>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<size>414,169</size>
+		<title>Move Shape</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="msLabelX">
+									<label translate="0">X</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxSlider" name="msSliderX">
+									<value translate="0">0</value>
+									<min>-25000</min>
+									<max>25000</max>
+									<size>400,-1</size>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="msTextX">
+									<size>60,-1</size>
+									<value translate="0">0.00000</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="msLabelY">
+									<label translate="0">Y</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxSlider" name="msSliderY">
+									<value translate="0">0</value>
+									<min>-25000</min>
+									<max>25000</max>
+									<size>400,-1</size>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="msTextY">
+									<size>60,-1</size>
+									<value translate="0">0.00000</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="msLabelZ">
+									<label translate="0">Z</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxSlider" name="msSliderZ">
+									<value translate="0">0</value>
+									<min>-25000</min>
+									<max>25000</max>
+									<size>400,-1</size>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="msTextZ">
+									<size>60,-1</size>
+									<value translate="0">0.00000</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxLEFT|wxBOTTOM</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="mirrorAxisLabel">
+					<label>Mirror Axis</label>
+					<wrap>-1</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxLEFT|wxBOTTOM</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckBox" name="mirrorAxisX">
+							<label translate="0">X</label>
+							<checked>0</checked>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckBox" name="mirrorAxisY">
+							<label translate="0">Y</label>
+							<checked>0</checked>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckBox" name="mirrorAxisZ">
+							<label translate="0">Z</label>
+							<checked>0</checked>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	
+	<object class="wxDialog" name="dlgScaleShape">
+		<style>wxCAPTION|wxDEFAULT_DIALOG_STYLE</style>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<size>423,250</size>
+		<title>Scale Shape</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="ssDescription">
+					<label>Scaling will adjust the size of a mesh. This permanently affects vertices.</label>
+					<wrap>400</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>0</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="ssLabelX">
+									<label translate="0">X</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxSlider" name="ssSliderX">
+									<value translate="0">1000</value>
+									<min>10</min>
+									<max>3000</max>
+									<size>400,-1</size>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="ssTextX">
+									<size>60,-1</size>
+									<value translate="0">1.00000</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>0</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="ssLabelY">
+									<label translate="0">Y</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxSlider" name="ssSliderY">
+									<value translate="0">1000</value>
+									<min>10</min>
+									<max>3000</max>
+									<size>400,-1</size>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="ssTextY">
+									<size>60,-1</size>
+									<value translate="0">1.00000</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>0</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="ssLabelZ">
+									<label translate="0">Z</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxSlider" name="ssSliderZ">
+									<value translate="0">1000</value>
+									<min>10</min>
+									<max>3000</max>
+									<size>400,-1</size>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="ssTextZ">
+									<size>60,-1</size>
+									<value translate="0">1.00000</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="originLabel">
+									<label>Origin</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxChoice" name="origin">
+									<selection>0</selection>
+									<content>
+										<item>Zero (0, 0, 0)</item>
+										<item>Center of selected shapes(s)</item>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</content>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckBox" name="ssUniform">
+							<label>Uniform (XYZ)</label>
+							<checked>1</checked>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<object class="button">
+					<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+					<border>5</border>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="wxButton" name="wxID_OK">
+						<label>&amp;OK</label>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+					</object>
+				</object>
+				<object class="button">
+					<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+					<border>5</border>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="wxButton" name="wxID_CANCEL">
+						<label>&amp;Cancel</label>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+					</object>
+				</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	
+	<object class="wxDialog" name="dlgRotateShape">
+		<style>wxCAPTION|wxDEFAULT_DIALOG_STYLE</style>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<size>423,155</size>
+		<title>Rotate Shape</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>0</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="rsLabelX">
+									<label translate="0">X</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxSlider" name="rsSliderX">
+									<value translate="0">0</value>
+									<min>-18000</min>
+									<max>18000</max>
+									<size>400,-1</size>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="rsTextX">
+									<size>60,-1</size>
+									<value translate="0">0.0000</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>0</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="rsLabelY">
+									<label translate="0">Y</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxSlider" name="rsSliderY">
+									<value translate="0">0</value>
+									<min>-18000</min>
+									<max>18000</max>
+									<size>400,-1</size>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="rsTextY">
+									<size>60,-1</size>
+									<value translate="0">0.0000</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>0</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="rsLabelZ">
+									<label translate="0">Z</label>
+									<wrap>-1</wrap>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxSlider" name="rsSliderZ">
+									<value translate="0">0</value>
+									<min>-18000</min>
+									<max>18000</max>
+									<size>400,-1</size>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxTextCtrl" name="rsTextZ">
+									<size>60,-1</size>
+									<value translate="0">0.0000</value>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="originLabel">
+							<label>Origin</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxChoice" name="origin">
+							<selection>0</selection>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<content>
+								<item>Zero (0, 0, 0)</item>
+								<item>Center of selected shapes(s)</item>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+							</content>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="dlgShapeTextures">
+		<style>wxDEFAULT_DIALOG_STYLE</style>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<size>457,308</size>
+		<title>Set Shape Textures</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxGrid" name="stTexGrid">
+					<style>wxALWAYS_SHOW_SB</style>
+					<size>800,260</size>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND | wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticLine" name="m_staticline2">
+					<style>wxLI_HORIZONTAL</style>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="dlgCopyWeights">
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<style>wxCAPTION|wxDEFAULT_DIALOG_STYLE</style>
+		<size>414,169</size>
+		<title>Copy Bone Weights</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="copyWeightsDescription">
+					<label>Each vertex of the reference will copy its weights to the nearest collection of vertices within the given radius. Bear in mind that some geometry will always require manual tweaking to become weighted and work well. Often, the default values are sufficient.</label>
+					<wrap>550</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxFlexGridSizer">
+					<rows>0</rows>
+					<cols>3</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<growablecols></growablecols>
+					<growablerows></growablerows>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="proximityRadiusLabel">
+							<label>Search Radius</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxSlider" name="proximityRadiusSlider">
+							<value translate="0">5000</value>
+							<min>0</min>
+							<max>20000</max>
+							<size>400,-1</size>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxTextCtrl" name="proximityRadiusText">
+							<size>60,-1</size>
+							<value translate="0">5.00000</value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="maxResultsLabel">
+							<label>Max Vertex Targets</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxSlider" name="maxResultsSlider">
+							<value translate="0">4</value>
+							<min>1</min>
+							<max>100</max>
+							<size>400,-1</size>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxTextCtrl" name="maxResultsText">
+							<size>60,-1</size>
+							<value translate="0">4</value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxLEFT</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxCheckBox" name="noTargetLimit">
+					<label>No Target Limit</label>
+					<checked>0</checked>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="copyTransDescription">
+					<label>The skin coordinate system doesn't match the reference shape's. Do you want to copy the transforms?</label>
+					<wrap>550</wrap>
+					<hidden>1</hidden>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxLEFT</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxCheckBox" name="cbCopySkinTrans">
+					<label>Copy skin transform from reference</label>
+					<checked>1</checked>
+					<hidden>1</hidden>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxLEFT</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxCheckBox" name="cbTransformGeo">
+					<label>Recalculate geometry's coordinates so it doesn't move</label>
+					<tooltip>Transform geometry so its position in global coordinates does not change.</tooltip>
+					<checked>1</checked>
+					<hidden>1</hidden>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="dlgConforming">
+		<style>wxCAPTION|wxDEFAULT_DIALOG_STYLE</style>
+		<size>414,169</size>
+		<title>Conforming...</title>
+		<centered>1</centered>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="conformingDescription">
+					<label>Each vertex of the reference will copy its slider data to the nearest collection of vertices within the given radius. Bear in mind that some geometry will always require manual tweaking to become conformed and work well. Often, the default values are sufficient.</label>
+					<wrap>550</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxFlexGridSizer">
+					<rows>0</rows>
+					<cols>3</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<growablecols></growablecols>
+					<growablerows></growablerows>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="proximityRadiusLabel">
+							<label>Search Radius</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxSlider" name="proximityRadiusSlider">
+							<value translate="0">10000</value>
+							<min>0</min>
+							<max>20000</max>
+							<size>400,-1</size>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxTextCtrl" name="proximityRadiusText">
+							<size>60,-1</size>
+							<value translate="0">10.00000</value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="maxResultsLabel">
+							<label>Max Vertex Targets</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxSlider" name="maxResultsSlider">
+							<value translate="0">10</value>
+							<min>1</min>
+							<max>100</max>
+							<size>400,-1</size>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxTextCtrl" name="maxResultsText">
+							<size>60,-1</size>
+							<value translate="0">10</value>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxBOTTOM</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="noTargetLimitLabel">
+							<label>No Target Limit</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxBOTTOM</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckBox" name="noTargetLimit">
+							<checked>0</checked>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="spacer">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<size>0,0</size>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxBOTTOM</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="noSqueezeLabel">
+							<label>No Squeeze</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxBOTTOM</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckBox" name="noSqueeze">
+							<checked>0</checked>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="spacer">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<size>0,0</size>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxBOTTOM</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="solidModeLabel">
+							<label>Solid Mode</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxBOTTOM</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckBox" name="solidMode">
+							<checked>0</checked>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="spacer">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<size>0,0</size>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxBOTTOM</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="axisLabel">
+							<label>Axis</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxBOTTOM</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxCheckBox" name="axisX">
+									<label translate="0">X</label>
+									<checked>1</checked>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxCheckBox" name="axisY">
+									<label translate="0">Y</label>
+									<checked>1</checked>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxRIGHT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxCheckBox" name="axisZ">
+									<label translate="0">Z</label>
+									<checked>1</checked>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="spacer">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<size>0,0</size>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="preset">
+							<label>Preset</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxBOTTOM</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxRIGHT|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="presetDefault">
+									<size>-1,25</size>
+									<label>Default</label>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxRIGHT|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="presetEvenMovement">
+									<size>-1,25</size>
+									<label>Even Movement</label>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxRIGHT|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="presetSolidObject">
+									<size>-1,25</size>
+									<label>Solid Object</label>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="spacer">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<size>0,0</size>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="dlgCopyGeometry">
+		<style>wxCAPTION|wxDEFAULT_DIALOG_STYLE</style>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<size>414,169</size>
+		<title>Merge Geometry</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="copyGeometryDescription">
+					<label>This function copies vertices and triangles from one shape to another.  Partitions/segments of source and target shapes must match.  It is the user's responsibility to check that all other shape and shader properties are compatible, or merging will likely have side effects.</label>
+					<wrap>550</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="sourceLabel">
+							<label>Source</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxChoice" name="sourceChoice">
+							<selection>0</selection>
+							<content />
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="targetLabel">
+							<label>Target</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxChoice" name="targetChoice">
+							<selection>0</selection>
+							<content />
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>10</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="copyGeometryErrors">
+					<label></label>
+					<wrap>550</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxCheckBox" name="checkDeleteSource">
+					<label>Delete source shape</label>
+					<checked>1</checked>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="dlgVertexAsym">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<size>423,155</size>
+		<title>Mask symmetric vertices</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="maskSymmetricVerticesDescription">
+					<label>Masks all vertices that do not have any of the selected asymmetries.</label>
+					<wrap>600</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxFlexGridSizer">
+					<rows>0</rows>
+					<cols>3</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<growablecols>1</growablecols>
+					<growablerows></growablerows>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="spacer">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<size>0,0</size>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="currentUnmaskedLabel">
+							<label>Vertices currently unmasked:</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT|wxALIGN_RIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="currentUnmaskedText">
+							<label translate="0">0</label>
+							<wrap>-1</wrap>
+							<style>wxALIGN_RIGHT</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxCheckBox" name="checkUnmatched">
+							<label></label>
+							<checked>0</checked>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="unmatchedVerticesLabel">
+							<label>Unmatched Vertices:</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT|wxALIGN_RIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="unmatchedVerticesText">
+							<label translate="0">0</label>
+							<wrap>-1</wrap>
+							<style>wxALIGN_RIGHT</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxVERTICAL</orient>
+					<label>Vertex Data Asymmetries</label>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<minsize>600,400</minsize>
+						<object class="wxScrolledWindow" name="asymScroll">
+							<style>wxVSCROLL</style>
+							<scrollrate>5,5</scrollrate>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="wxBoxSizer">
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxFlexGridSizer">
+										<rows>0</rows>
+										<cols>4</cols>
+										<vgap>0</vgap>
+										<hgap>0</hgap>
+										<growablecols>1</growablecols>
+										<growablerows></growablerows>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="spacer">
+											<option>0</option>
+											<flag>wxRIGHT</flag>
+											<border>0</border>
+											<size>0,0</size>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxLEFT|wxRIGHT</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="typeHeading">
+												<label>Type</label>
+												<wrap>-1</wrap>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxRIGHT</flag>
+											<border>20</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="avgHeading">
+												<label>Average</label>
+												<wrap>-1</wrap>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxLEFT|wxRIGHT</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="countHeading">
+												<label>Count</label>
+												<wrap>-1</wrap>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxRIGHT</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxCheckBox" name="checkPosition">
+												<label></label>
+												<checked>0</checked>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxLEFT|wxRIGHT</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="positionLabel">
+												<label>Position</label>
+												<wrap>-1</wrap>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxRIGHT|wxALIGN_RIGHT</flag>
+											<border>20</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="posAvgText">
+												<label translate="0">0</label>
+												<wrap>-1</wrap>
+												<style>wxALIGN_RIGHT</style>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxLEFT|wxRIGHT|wxALIGN_RIGHT</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="positionText">
+												<label translate="0">0</label>
+												<wrap>-1</wrap>
+												<style>wxALIGN_RIGHT</style>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxRIGHT</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxCheckBox" name="checkAnySlider">
+												<label></label>
+												<style>wxCHK_3STATE</style>
+												<checked>0</checked>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxLEFT|wxRIGHT</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="anySliderLabel">
+												<label translate="0">x Sliders</label>
+												<wrap>-1</wrap>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="spacer">
+											<option>0</option>
+											<flag>wxRIGHT</flag>
+											<border>0</border>
+											<size>0,0</size>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxLEFT|wxRIGHT|wxALIGN_RIGHT</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="anySliderText">
+												<label translate="0">0</label>
+												<wrap>-1</wrap>
+												<style>wxALIGN_RIGHT</style>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxCollapsiblePane" name="slidersCollapse">
+										<style>wxCP_DEFAULT_STYLE</style>
+										<collapsed>1</collapsed>
+										<label>Sliders</label>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxBoxSizer">
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<orient>wxHORIZONTAL</orient>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxRIGHT</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxCheckBox" name="checkAnyBone">
+												<label></label>
+												<style>wxCHK_3STATE</style>
+												<checked>0</checked>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>1</option>
+											<flag>wxLEFT|wxRIGHT</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="anyBoneLabel">
+												<label translate="0">x Bones</label>
+												<wrap>-1</wrap>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxLEFT|wxRIGHT|wxALIGN_RIGHT</flag>
+											<border>5</border>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<object class="wxStaticText" name="anyBoneText">
+												<label translate="0">0</label>
+												<wrap>-1</wrap>
+												<style>wxALIGN_RIGHT</style>
+												<bg>#1C1C1C</bg>
+												<fg>#4D4D4D</fg>
+											</object>
+										</object>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<object class="wxCollapsiblePane" name="bonesCollapse">
+										<style>wxCP_DEFAULT_STYLE</style>
+										<collapsed>1</collapsed>
+										<label>Bones</label>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxLEFT|wxRIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="stillUnmaskedLabel">
+							<label>Vertices that will still be unmasked:</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT|wxALIGN_RIGHT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<minsize>100,20</minsize>
+						<object class="wxStaticText" name="stillUnmaskedText">
+							<label translate="0">0</label>
+							<wrap>-1</wrap>
+							<style>wxALIGN_RIGHT</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND|wxALL</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;Mask</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>

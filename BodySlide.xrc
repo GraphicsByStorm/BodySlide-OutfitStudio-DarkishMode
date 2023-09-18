@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+	<object class="wxFrame" name="bodySlideFrame">
+		<style>wxCAPTION|wxCLOSE_BOX|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxRESIZE_BORDER|wxSYSTEM_MENU|wxTAB_TRAVERSAL|wxCLIP_CHILDREN</style>
+		<size>800,750</size>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<title>BodySlide</title>
+		<centered>0</centered>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxFlexGridSizer">
+					<rows>3</rows>
+					<cols>5</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<growablecols>1</growablecols>
+					<growablerows></growablerows>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lblOutfits">
+							<label>Outfit/Body</label>
+							<wrap>-1</wrap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxChoice" name="outfitChoice">
+									<style>wxCB_SORT</style>
+									<tooltip>Select an outfit to modify</tooltip>
+									<selection>0</selection>
+									<content />
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxTOP|wxBOTTOM</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btnDeleteProject">
+							<size>24,24</size>
+							<bitmap stock_id="wxART_DELETE"/>
+							<tooltip>Deletes a project from its project file</tooltip>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxTOP|wxBOTTOM|wxLEFT|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="btnEditProject">
+									<size>24,24</size>
+									<bitmap>$(AppDir)\res\images\LoadProj_sm.png</bitmap>
+									<tooltip>Opens the current project in Outfit Studio</tooltip>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="unknown" name="searchHolder" />
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxRIGHT|wxTOP|wxBOTTOM|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="unknown" name="outfitsearchHolder" />
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT|wxALIGN_CENTER</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lblPresets">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<label>Preset</label>
+							<wrap>-1</wrap>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALIGN_CENTER</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxChoice" name="presetChoice">
+									<style>wxCB_SORT</style>
+									<tooltip>Choose from a list of slider settings presets</tooltip>
+									<selection>0</selection>
+									<content />
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag></flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btnDeletePreset">
+							<size>24,24</size>
+							<bitmap stock_id="wxART_DELETE"/>
+							<tooltip>Deletes a preset from its preset file</tooltip>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxLEFT|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="btnSavePreset">
+									<fg>wxSYS_COLOUR_BTNTEXT</fg>
+									<tooltip>Saves the new slider values to the currently selected preset</tooltip>
+									<label>Save</label>
+									<enabled>0</enabled>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="btnSavePresetAs">
+									<fg>wxSYS_COLOUR_BTNTEXT</fg>
+									<tooltip>Save the current slider settings as a new preset</tooltip>
+									<label>Save As...</label>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxRIGHT|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btnGroupManager">
+							<fg>wxSYS_COLOUR_BTNTEXT</fg>
+							<tooltip>Opens the group manager where you can edit existing or create new groups</tooltip>
+							<label>Group Manager</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="spacer">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<size>-1,24</size>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="unknown" name="dummy" />
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="unknown" name="sliderFilter" />
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<border>0</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="unknown" name="dummy" />
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<border>0</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="unknown" name="dummy" />
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<border>0</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="unknown" name="dummy" />
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticText" name="lblSingleWt">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<font>
+								<size>12</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<face>Andalus</face>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+							</font>
+							<label>Single Weight</label>
+							<wrap>-1</wrap>
+							<hidden>1</hidden>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxGridSizer">
+							<rows>1</rows>
+							<cols>2</cols>
+							<vgap>0</vgap>
+							<hgap>0</hgap>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="lblLowWt">
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<font>
+										<size>12</size>
+										<style>normal</style>
+										<weight>normal</weight>
+										<underlined>0</underlined>
+										<face>Andalus</face>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</font>
+									<label>Low Weight</label>
+									<wrap>-1</wrap>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="lblHighWt">
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<font>
+										<size>12</size>
+										<style>normal</style>
+										<weight>normal</weight>
+										<underlined>0</underlined>
+										<face>Andalus</face>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+									</font>
+									<label>High Weight</label>
+									<wrap>-1</wrap>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>10</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxScrolledWindow" name="SliderScrollWindow">
+							<style>wxNO_BORDER|wxTAB_TRAVERSAL|wxVSCROLL</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<object class="wxFlexGridSizer">
+								<cols>6</cols>
+								<minsize>-1,90</minsize>
+								<vgap>0</vgap>
+								<hgap>0</hgap>
+								<growablecols>1,4</growablecols>
+								<growablerows></growablerows>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxGridBagSizer">
+					<cols>3</cols>
+					<hgap>5</hgap>
+					<vgap>5</vgap>
+					<growablecols>0,1,2</growablecols>
+					<growablerows></growablerows>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="sizeritem">
+						<cellpos>0,0</cellpos>
+						<cellspan>1,1</cellspan>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btnLowToHigh">
+							<size>26,-1</size>
+							<fg>wxSYS_COLOUR_BTNTEXT</fg>
+							<tooltip>Copy the low weight slider values to the high weight section.</tooltip>
+							<label translate="0">&#8594;</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<cellpos>1,0</cellpos>
+						<cellspan>1,3</cellspan>
+						<flag>wxLEFT</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxCheckBox" name="cbIsOutfitChoice">
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<tooltip>Default outfit choice in Batch Build</tooltip>
+									<label></label>
+									<hidden>1</hidden>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxLEFT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="conflictLabel">
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<tooltip>Output Path (which the game would use for this outfit)</tooltip>
+									<label></label>
+									<wrap>-1</wrap>
+									<hidden>1</hidden>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxLEFT</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticText" name="conflictInfo">
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<label>(right-click to view alternatives)</label>
+									<wrap>-1</wrap>
+									<hidden>1</hidden>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<cellpos>2,0</cellpos>
+						<cellspan>1,1</cellspan>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="btnBuildBatch">
+									<fg>wxSYS_COLOUR_BTNTEXT</fg>
+									<tooltip>Build multiple outfits using the currently active slider values.\n\nHold CTRL = Build to custom directory\nHold ALT = Delete from output directory</tooltip>
+									<label>Batch Build...</label>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxBoxSizer">
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALL</flag>
+										<border>0</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxCheckBox" name="cbMorphs">
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<label>Build Morphs</label>
+											<tooltip>Builds a morphs (.tri) file alongside the meshes for accessing the sliders in-game. Requires other mods to make use of the morph data.</tooltip>
+											<hidden>1</hidden>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALL</flag>
+										<border>0</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxCheckBox" name="cbForceBodyNormals">
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+											<label>Force Body Normals</label>
+											<tooltip>Adds normal and tangent data to the body meshes (including bodies within outfits) for Skyrim. Use this only if you have a tangent space body mod.</tooltip>
+											<hidden>1</hidden>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<cellpos>0,1</cellpos>
+						<cellspan>1,1</cellspan>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btnPreview">
+							<size>128,-1</size>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<tooltip>Show a preview window for this outfit.</tooltip>
+							<label>Preview</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<cellpos>2,1</cellpos>
+						<cellspan>1,1</cellspan>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btnBuild">
+							<size>128,45</size>
+							<font>
+								<size>12</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<face>Andalus</face>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+							</font>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<tooltip>Creates the currently selected outfit/body.\n\nHold CTRL = Build to working directory\nHold ALT = Delete from output directory</tooltip>
+							<label>Build</label>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<cellpos>0,2</cellpos>
+						<cellspan>1,1</cellspan>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btnHighToLow">
+							<size>26,-1</size>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<tooltip>Copy the high weight slider values to the low weight section.</tooltip>
+							<label translate="0">&#8592;</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<cellpos>2,2</cellpos>
+						<cellspan>1,1</cellspan>
+						<flag>wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxHORIZONTAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="btnAbout">
+									<size>24,24</size>
+									<bitmap stock_id="wxART_INFORMATION"/>
+									<tooltip>About</tooltip>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="btnSettings">
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<tooltip>Open settings dialog.</tooltip>
+									<label>Settings</label>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="btnOutfitStudio">
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<tooltip>Open Outfit Studio, a full-featured tool for creating and converting outfits.</tooltip>
+									<label>Outfit Studio</label>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxMenu" name="menuGroupContext">
+		<label>Filter Options</label>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<object class="wxMenuItem" name="menuChooseGroups">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<label>Choose groups...</label>
+			<help>Choose groups to display in the Outfit menu</help>
+		</object>
+		<object class="wxMenuItem" name="menuRefreshGroups">
+			<label>Refresh Groups</label>
+			<help>Refresh group information</help>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+		</object>
+	</object>
+	<object class="wxMenu" name="menuOutfitSrchContext">
+		<label>Filter Options</label>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<object class="wxMenuItem" name="menuSaveGroups">
+			<label>Save Outfit list as group...</label>
+			<help>Save the current filtered outfit list as a group</help>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+		</object>
+		<object class="wxMenuItem" name="menuRefreshOutfits">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<label>Refresh Outfits</label>
+			<help>Reloads outfit list</help>
+		</object>
+		<object class="wxMenuItem" name="menuRegexOutfits">
+			<label>Regular Expressions</label>
+			<help>Allow the use of regular expressions (regex) for filtering.</help>
+			<checkable>1</checkable>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+		</object>
+	</object>
+	<object class="wxMenu" name="batchBuildContext">
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<object class="wxMenuItem" name="batchBuildNone">
+			<label>Select None</label>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+		</object>
+		<object class="wxMenuItem" name="batchBuildAll">
+			<label>Select All</label>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+		</object>
+		<object class="wxMenuItem" name="batchBuildInvert">
+			<label>Invert Selection</label>
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+		</object>
+	</object>
+	<object class="wxMenu" name="menuFileCollision">
+	<bg>#1C1C1C</bg>
+	<fg>#4D4D4D</fg>
+	</object>
+</resource>

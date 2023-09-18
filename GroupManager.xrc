@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+	<object class="wxDialog" name="dlgGroupManager">
+		<style>wxDEFAULT_DIALOG_STYLE|wxMAXIMIZE_BOX|wxRESIZE_BORDER</style>
+		<size>800,500</size>
+		<bg>#1C1C1C</bg>
+		<fg>#4D4D4D</fg>
+		<title>Group Manager</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<bg>#1C1C1C</bg>
+			<fg>#4D4D4D</fg>
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStaticText" name="lbHeader">
+					<style>wxALIGN_CENTRE</style>
+					<label>Choose a group and add or remove members by selecting them in the lists.</label>
+					<wrap>-1</wrap>
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>2</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxFilePickerCtrl" name="fpGroupXML">
+							<value translate="0"></value>
+							<message>Select a group XML file</message>
+							<wildcard>Group Files (*.xml)|*.xml</wildcard>
+							<style>wxFLP_DEFAULT_STYLE</style>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btSave">
+							<enabled>0</enabled>
+							<label>Save</label>
+							<default>0</default>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="btSaveAs">
+							<label>Save As...</label>
+							<default>0</default>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxBoxSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxVERTICAL</orient>
+							<label>Groups</label>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxEXPAND|wxALL</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxListBox" name="listGroups">
+									<style>wxLB_ALWAYS_SB|wxLB_SORT</style>
+									<content />
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxBoxSizer">
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<orient>wxHORIZONTAL</orient>
+									<object class="sizeritem">
+										<option>2</option>
+										<flag>wxALL</flag>
+										<border>5</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxTextCtrl" name="groupName">
+											<value translate="0"></value>
+											<maxlength>75</maxlength>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALL</flag>
+										<border>5</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxButton" name="btAddGroup">
+											<label>Add Group</label>
+											<default>0</default>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALL</flag>
+										<border>5</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxButton" name="btRemoveGroup">
+											<label>Remove Group</label>
+											<default>0</default>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+										</object>
+									</object>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxStaticBoxSizer">
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+									<orient>wxVERTICAL</orient>
+									<label>Members</label>
+									<object class="sizeritem">
+										<option>1</option>
+										<flag>wxALL|wxEXPAND</flag>
+										<border>5</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxListBox" name="listMembers">
+											<style>wxLB_ALWAYS_SB|wxLB_EXTENDED|wxLB_SORT</style>
+											<content />
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALL|wxEXPAND</flag>
+										<border>5</border>
+										<bg>#1C1C1C</bg>
+										<fg>#4D4D4D</fg>
+										<object class="wxButton" name="btRemoveMember">
+											<label>Remove &gt;&gt;</label>
+											<default>0</default>
+											<bg>#1C1C1C</bg>
+											<fg>#4D4D4D</fg>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxStaticBoxSizer">
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+							<orient>wxVERTICAL</orient>
+							<label>Outfits</label>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="unknown" name="outfitFilter" />
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxListBox" name="listOutfits">
+									<style>wxLB_ALWAYS_SB|wxLB_EXTENDED|wxLB_SORT</style>
+									<content />
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<bg>#1C1C1C</bg>
+								<fg>#4D4D4D</fg>
+								<object class="wxButton" name="btAddMember">
+									<label>&lt;&lt; Add</label>
+									<default>0</default>
+									<bg>#1C1C1C</bg>
+									<fg>#4D4D4D</fg>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<bg>#1C1C1C</bg>
+				<fg>#4D4D4D</fg>
+				<object class="wxStdDialogButtonSizer">
+					<bg>#1C1C1C</bg>
+					<fg>#4D4D4D</fg>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<bg>#1C1C1C</bg>
+						<fg>#4D4D4D</fg>
+						<object class="wxButton" name="wxID_OK">
+							<label>Close</label>
+							<bg>#1C1C1C</bg>
+							<fg>#4D4D4D</fg>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>
