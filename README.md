@@ -1,7 +1,7 @@
 # BodySlide-OutfitStudio-DarkishMode
  I went through the .xrc files and converted as much as is possible to a dark theme.
 
-![image](https://github.com/fr4ctur3d/BodySlide-OutfitStudio-DarkishMode/assets/89564679/382cc509-ac28-4a01-b5aa-f6a50eff3e6d)
+![image](https://imgur.com/WtY3LoL)
 
 
 # Install Instructions
