@@ -1,7 +1,7 @@
 # BodySlide-OutfitStudio-DarkishMode
  I went through the .xrc files and converted as much as is possible to a dark theme.
 
- NOTE: This is JUST the .xrc files, nothing else from BodySlide or OutfitStudio exist here, so download the tools from ![here](https://www.nexusmods.com/skyrimspecialedition/mods/201)!
+ NOTE: This is JUST the .xrc files, nothing else from BodySlide or OutfitStudio exist here, so download the tools from [here](https://www.nexusmods.com/skyrimspecialedition/mods/201)!
 
 ![image](https://i.imgur.com/WtY3LoL.png)
 
