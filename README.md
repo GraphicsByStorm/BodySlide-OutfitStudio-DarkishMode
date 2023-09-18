@@ -9,7 +9,7 @@
 * Locate current BodySlide/OutfitStudio folder. for MO2 Users this should be in your MO2/mods/BodySlide and Outfit Studio/BodySlide
 * Extract this zip folder into the MO2/mods/BodySlide and Outfit Studio/CalienteTools/BodySlide/res/xrc
 
-![image](https://github.com/fr4ctur3d/BodySlide-OutfitStudio-DarkishMode/assets/89564679/181d59fa-856f-4914-869b-ad79975da49c)
+![image](https://i.imgur.com/0ePy5hk.png)
 
 * That's it! After ensuring all 19 .xrc files are in the xrc folder start up BodySlide or OutfitStudio!
 * Enjoy your Darkish Mode, your eyes will thank you!
